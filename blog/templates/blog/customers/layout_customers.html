@@ -1,0 +1,113 @@
+{% load staticfiles %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Speakko is ... blah blah blah. ">
+    <title>Speakko &mdash; Speaking Korean</title>
+
+    <link rel="stylesheet" href="https://d301sr5gafysq2.cloudfront.net/18f0b9db1b28/css/entry/marketing.css">
+  </head>
+
+  <body class="production " id="homepage">
+    <header class="marketing-header">
+      <div class="fixed-width">
+        <nav class="marketing-header--nav">
+          <h1 class="marketing-header--heading">
+            <a href="/">
+             <img class="marketing-header--logo" src="https://d301sr5gafysq2.cloudfront.net/18f0b9db1b28/img/homepage/bitbucket-logo-blue.svg" alt="Bitbucket">
+            </a>
+          </h1>
+          <ul class="marketing-header--list">            
+              <li class="marketing-header--item">
+                <a id="features-link" class="marketing-header--link" href="/product/features" data-ct="header.features">
+                  체험하기
+                </a>
+              </li>              
+              <li class="marketing-header--item">
+                <a class="marketing-header--link" href="/integrations"
+                    data-ct="header.integrations">
+                  수강안내
+                </a>
+              </li>
+              <li class="marketing-header--item">
+                <a class="marketing-header--link" href="/product/server"
+                    data-ct="header.server">
+                  선생님찾기
+                </a>
+              </li>
+              <li class="marketing-header--item">
+                <a class="marketing-header--link" href="/customers/notification"
+                   data-ct="header.datacenter">
+                  <strong>고객센터</strong>
+                </a>
+              </li>
+              <li class="marketing-header--item">
+                <a class="marketing-header--link" href="/product/pricing"
+                    data-ct="header.pricing">
+                  스픽코소개
+                </a>
+              </li>
+              <li class="marketing-header--item">
+                <a class="marketing-header--link" href="/account/signin/?next=/"
+                    data-ct="header.login">
+                  나의 강의실
+                </a>
+              </li>
+              <li class="marketing-header--item">
+                <a id="sign-up-link" class="marketing-header--link marketing-header--link--primary"
+                    data-ct="header.signup"
+                    href="/account/signup/">
+                  수강신청!!
+                </a>
+              </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    
+    <main class="marketing-content">
+      <section class="marketing-feature-spotlight">
+        <div class="fixed-width">
+          <h1 class="marketing-feature-spotlight--heading marketing-section--heading marketing-heading">
+          {% block centerfirsttitle %}
+
+          {% endblock %}
+          </h1>
+          <p class="marketing-section--tagline">
+          {% block centersecondtitle %}
+
+          {% endblock %}
+          </p>     
+        </div>
+      </section>
+    </main>
+
+    <footer class="marketing-footer">
+      <ul class="marketing-footer--list">
+        <li class="marketing-footer--item">
+          <a
+              class="marketing-footer--link"
+              target="_blank"
+              href="http://www.naver.com">Naver</a>   
+        </li>
+        <li class="marketing-footer--item">
+          <a
+              class="marketing-footer--link"
+              target="_blank"
+              href="/footer2">Footer2</a>
+        </li>
+      </ul>
+
+      <ul class="marketing-footer--list">
+        <li class="marketing-footer--item">
+          <a
+              class="marketing-footer--logo marketing-footer--link"
+              href="http://www.atlassian.com/?utm_source=bitbucket&utm_medium=logo&utm_campaign=bitbucket_footer" target="_blank">Atlassian</a>
+        </li>
+      </ul>
+    </footer> 
+  </body>
+</html>
